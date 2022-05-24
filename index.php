@@ -1,3 +1,8 @@
+<?php 
+
+    include('form.php');
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,12 +15,7 @@
     <title>Transformação Digital</title>
 </head>
 <body>
-    <?php 
-        if(isset($_SESSION)) {
-            unset($_SESSION);
-        }
 
-    ?>
 
     <div class="container-fluid" id="top">
 
@@ -42,7 +42,7 @@
 
         <div class="container col-5 mt-5 align-items-center" id="form">
 
-            <form class="d-flex flex-column justify-content-center" action="form.php" method="post" id="formBody">
+            <form class="d-flex flex-column justify-content-center" action="form.php" method="POST" id="formBody">
                 
                 <div class="d-flex align-items-center justify-content-between mb-4">
 

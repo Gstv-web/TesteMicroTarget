@@ -11,7 +11,7 @@
         $query = "INSERT INTO tb_formulario (nome, email, telefone) VALUES ('$nome', '$email', '$telefone')";
         $result = mysqli_query($link, $query);
 
-        header("Location: index.php");
+        header("Location: index.html");
         
     }
 
