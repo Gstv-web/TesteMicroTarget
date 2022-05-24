@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Transformação Digital</title>
 </head>
 <body>
+    <?php 
+        if(isset($_SESSION)) {
+            unset($_SESSION);
+        }
 
+    ?>
 
     <div class="container-fluid" id="top">
 
@@ -36,7 +42,7 @@
 
         <div class="container col-5 mt-5 align-items-center" id="form">
 
-            <form class="d-flex flex-column justify-content-center" action="teste.php" method="post" id="formBody">
+            <form class="d-flex flex-column justify-content-center" action="form.php" method="post" id="formBody">
                 
                 <div class="d-flex align-items-center justify-content-between mb-4">
 
@@ -70,28 +76,6 @@
                         <button type="submit" class="btn btn-primary">Enviar</button>    
                     </div>
                 </div>
-    <?php
-
-        $user = "root";
-        $password = "larevancha666";
-        $dataBase = "db_testemicrotarget";
-        $host = "Localhost";
-
-        $link = mysqli_connect($host, $user, $password, $dataBase) or die ("Erro de conexão");
-
-
-
-        if(isset($_POST['nome'], $_POST['email'], $_POST['telefone'])){
-            $nome = $_POST['nome'];
-            $email = $_POST['email'];
-            $telefone = $_POST['telefone'];
-
-            $query = "INSERT INTO tb_formulario (nome, email, telefone) VALUES ('$nome', '$email', '$telefone')";
-            $result = mysqli_query($link, $query);
-            
-        }
-
-    ?>
 
 
             </form>
