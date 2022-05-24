@@ -1,0 +1,129 @@
+#top {
+    background-image: url(/img/Background\ Transformação\ Digital.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#firstBlock {
+    height: 80vh;
+}
+
+h1 {
+    font-family: 'Arial Black', 'sans-serif';
+    text-shadow: 0 15px 25px rgba(0, 0, 0, 0.726);
+    margin-top: 15vh;
+    font-size: 80px;
+    color: white;
+}
+
+#texto p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #06385f
+}
+
+#captcha {
+    margin-left: 50px;
+}
+
+#form {
+    box-shadow: 0 0 1em #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+#formBody {
+    margin-top: 9vh;
+}
+
+input {
+    width: 30vw;
+    border: 2px solid #05518b;
+    margin-right: 17px;
+}
+
+#objects {
+    position: relative;
+    margin-top: -465px;
+}
+
+/*#faleConosco {
+    border-radius: 8px;
+    padding: 8px;
+    width: 30vw;
+    margin-top: 10vh;
+    box-shadow: 5px 5px 20px 0 #333;
+}*/
+
+#faleConosco p {
+    font-size: 60px;
+    font-weight: bold;
+    color: #1770b4;
+}
+
+#Convidados {
+    margin-top: 13vh;
+    margin-bottom: 7vh;
+}
+
+#Convidados p {
+    font-size: 45px;
+    font-weight: bold;
+    color: #0a3d64;
+}
+
+.sub {
+    font-size: 25px !important;
+    font-weight: normal !important;
+    color: #0a3d64;
+}
+
+#participantes {
+    background-image: url(/img/Background\ Final.png);
+    background-size: cover;
+}
+
+.pics {
+    margin-bottom: -125px;
+    width: 85%;
+}
+
+#divDescricao {
+    margin-left: 80px;
+}
+
+.descricao {
+    margin-top: 70px;
+    border: 6px solid #399de9;
+    height: auto;
+    margin-right: 2%;
+}
+
+.descricao p {
+    margin-top: 25px;
+    font-family: 'Arial';
+    font-size: 18px;
+    color: white;
+}
+
+.nome {
+    font-weight: bold !important;
+    font-size: 24px !important;
+}
+
+#apoio {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+
+#faixa {
+    border: 2px solid white;
+}
+
+.footer {
+    height: 15vh;
+    color: white;
+}
